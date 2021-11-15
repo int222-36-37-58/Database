@@ -14,6 +14,7 @@ services:
     - ./mycustom.cnf:/etc/mysql/conf.d/custom.cnf
    ports:
     - "3306:3306"
+   command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
    networks:
        docker_network:
           ipv4_address: 172.22.0.2
