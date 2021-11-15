@@ -11,7 +11,7 @@ services:
    volumes:
     - "~/database/data/_data:/var/lib/mysql"
     - "~/database/data/my.cnf:/etc/my.cnf"
-    - mycustom.cnf:/etc/mysql/conf.d/custom.cnf
+    - ./mycustom.cnf:/etc/mysql/conf.d/custom.cnf
    ports:
     - "3306:3306"
    networks:
