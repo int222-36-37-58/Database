@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `int222`.`Product` (
   `price` DOUBLE(8,2) NOT NULL,
   `saleDate` DATE NOT NULL,
   `imageName` VARCHAR(100) NOT NULL,
-  `quantity` INT(6) NOT NULL,
+  `quantity` INT(5) NOT NULL,
   `typeId` INT NOT NULL,
   `userId` INT NOT NULL,
   PRIMARY KEY (`productId`, `typeId`, `userId`),
